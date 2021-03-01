@@ -1,0 +1,71 @@
+@import blank
+
+#back
+	color: $text-secondary
+	font-size: 20px
+	width: 40px
+	transition: 0.1s ease-in
+
+	&:hover
+		color: $accent
+		transition: 0.2s ease-in
+
+.approve_changes
+	grid-column-start: span 3;
+	width: 100%
+	display: flex
+	justify-content: space-evenly
+
+button
+	outline: none
+	background-color: $item-main
+	border: none
+	border-radius: 10px
+	cursor: pointer
+	width: 100%
+	max-width: 200px
+	padding: 15px 0
+
+#save
+	background-color: #5378e090
+	transition: 0.1s ease-in
+
+	&:hover
+		background-color: #5378e0
+		transition: 0.1s ease-in
+
+
+#discard
+	background-color: #303241	
+	transition: 0.1s ease-in
+
+	&:hover
+		background-color: #303241a9
+		transition: 0.1s ease-in
+
+.section
+	padding: 30px 20px
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.enter_info
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 35px
+
+	p
+		width: 40%
+
+	input
+		width: 55%
+		height: 60px
+		outline: none
+		border-radius: 10px
+		padding: 15px
+		box-shadow: none
+		border: none
+		font: 16px $font-text
+		color: $background
+		caret-color: $accent

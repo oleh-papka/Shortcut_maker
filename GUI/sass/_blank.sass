@@ -1,0 +1,120 @@
+// ==== Variables ====
+
+$background: #373d4b
+
+$text-primary: #EEFBFB
+$text-secondary: #a2bbbb
+
+$item-main:	#303241
+$item-incidental: #4d5465
+
+$accent: #5378e0
+
+$font-heading-primary: "Poppins"
+$font-text: "Hind Guntur"
+
+
+// ==== Resert ====
+	
+*
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+body
+	height: 100%
+	width: 100%
+	background-color: $background
+
+h1
+	font: 28px $font-heading-primary
+	color: $text-primary
+	margin: 0
+
+h2
+	font: 20px $font-heading-primary
+	color: $text-primary
+	margin: 0
+
+p
+	font: 16px $font-text
+	color: $text-secondary
+	margin: 0
+
+a
+	text-decoration: none
+	color: $accent
+
+ul
+	list-style: none
+	
+
+::-webkit-scrollbar-track
+	background-color: $item-incidental
+
+::-webkit-scrollbar
+	width: 12px
+	background-color: $accent
+
+::-webkit-scrollbar-thumb
+	border-radius: 10px
+	background-color: #5378e055
+
+	&:hover
+		background-color: $accent
+
+
+nav 
+	height: 80px
+	background-color: $item-main
+	width: 100%
+	display: flex
+	align-items: center
+	padding: 0 25px
+	
+	h1
+		margin-left: 20px
+		
+
+section
+	padding: 30px 20px
+	display: grid
+	grid-gap: 30px 20px
+	grid-template-columns: repeat( 3, 1fr )
+	justify-items: center
+
+.card
+	width: 150px
+	height: 100%
+	background-color: $item-main
+	border-radius: 10px
+	border: 2px solid transparent
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	padding: 10px
+	transition: 0.1s ease-in
+	cursor: pointer
+
+	&:hover
+		border: 2px solid $item-incidental
+		transition: 0.1s ease-in
+
+	h2
+		margin: 0 0 8px
+
+	.photo
+		width: 100%
+		height: 100px
+		background-color: $accent
+		border-radius: 8px
+
+.title
+	grid-column-start: span 3;
+	background-color: $item-incidental
+	width: 100%
+	display: flex
+	justify-content: center
+	padding: 10px 0
+	border-radius: 10px
