@@ -74,7 +74,7 @@ nav h1 {
 }
 
 section {
-  padding: 30px 20px;
+  padding: 30px 20px 50px;
   display: -ms-grid;
   display: grid;
   grid-gap: 30px 20px;
@@ -126,8 +126,9 @@ section {
 }
 
 .title {
-  -ms-grid-column: span 3;
-      grid-column-start: span 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
   background-color: #4d5465;
   width: 100%;
   display: -webkit-box;
@@ -140,108 +141,14 @@ section {
   border-radius: 10px;
 }
 
-#back {
+#settings {
   color: #a2bbbb;
-  font-size: 20px;
-  width: 40px;
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
 }
 
-#back:hover {
+#settings:hover {
   color: #5378e0;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-}
-
-.approve_changes {
-  -ms-grid-column: span 3;
-      grid-column-start: span 3;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-button {
-  outline: none;
-  background-color: #303241;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 200px;
-  padding: 15px 0;
-}
-
-#save {
-  background-color: #5378e090;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-#save:hover {
-  background-color: #5378e0;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-#discard {
-  background-color: #303241;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-#discard:hover {
-  background-color: #303241a9;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-.section {
-  padding: 30px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.enter_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 35px;
-}
-
-.enter_info p {
-  width: 40%;
-}
-
-.enter_info input {
-  width: 55%;
-  height: 60px;
-  outline: none;
-  border-radius: 10px;
-  padding: 15px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  font: 16px "Hind Guntur";
-  color: #373d4b;
-  caret-color: #5378e0;
 }

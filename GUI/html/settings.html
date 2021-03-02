@@ -6,17 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="/css/settings.css">
+	<!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+	<script type="text/javascript" src="/eel.js"></script>
+	<script type="text/javascript"></script>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="../css/settings.css">
 
 	<!-- Icons -->
-
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 	<!-- GoogleFonts -->
-
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Poppins:wght@500&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 	<title>Shortcut_maker settings</title>
 </head>
@@ -30,124 +32,206 @@
 
 	<section>
 		<div class="title">
-			<h2>Manage presets:</h2>
+			<h2>Manage planning preset:</h2>
 		</div>
 
-		<div class="card" id="planning_preset">
-			<h2>Plan pre.</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for first app (first desktop) here-></p>
+			<input type="text" id="plan_desktop1_app1_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="planning_preset">
-			<h2>Code pre.</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for second app (first desktop) here-></p>
+			<input type="text" id="plan_desktop1_app2_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="planning_preset">
-			<h2>Univ pre.</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (first desktop) here-></p>
+			<input type="text" id="plan_desktop1_app3_link" placeholder="Default none">
 		</div>
 
-		<div class="title">
-			<h2>Manage quick access:</h2>
+		<div class="divider"></div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for first app (second desktop) here-></p>
+			<input type="text" id="plan_desktop2_app1_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="item1">
-			<h2>Item 1</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for second app (second desktop) here-></p>
+			<input type="text" id="plan_desktop2_app2_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="item2">
-			<h2>Item 2</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (second desktop) here-></p>
+			<input type="text" id="plan_desktop2_app3_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="item3">
-			<h2>Item 3</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="divider"></div>
+
+		<div class="enter_info">
+			<p>Enter link or path for first app (third desktop) here-></p>
+			<input type="text" id="plan_desktop3_app1_link" placeholder="Default none">
 		</div>
 
-
-		<div class="card" id="item4">
-			<h2>Item 4</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for second app (third desktop) here-></p>
+			<input type="text" id="plan_desktop3_app2_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="item5">
-			<h2>Item 5</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
-		</div>
-
-		<div class="card" id="item6">
-			<h2>Item 6</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (third desktop) here-></p>
+			<input type="text" id="plan_desktop3_app3_link" placeholder="Default none">
 		</div>
 
 
 		<div class="title">
-			<h2>Manage music:</h2>
+			<h2>Manage code preset:</h2>
 		</div>
 
-		<div class="card" id="code_music">
-			<h2>Code</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for first app (first desktop) here-></p>
+			<input type="text" id="code_desktop1_app1_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="loFi_music">
-			<h2>lo-fi</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for second app (first desktop) here-></p>
+			<input type="text" id="code_desktop1_app2_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="cyberpunk_music">
-			<h2>Cyberpunk</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (first desktop) here-></p>
+			<input type="text" id="code_desktop1_app3_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="rock_music">
-			<h2>Rock</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="divider"></div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for first app (second desktop) here-></p>
+			<input type="text" id="code_desktop2_app1_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="bass_music">
-			<h2>Bass</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		<div class="enter_info">
+			<p>Enter link or path for second app (second desktop) here-></p>
+			<input type="text" id="code_desktop2_app2_link" placeholder="Default none">
 		</div>
 
-		<div class="card" id="electronic_music">
-			<h2>Electronic</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (second desktop) here-></p>
+			<input type="text" id="code_desktop2_app3_link" placeholder="Default none">
 		</div>
+		
+		<div class="divider"></div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for first app (third desktop) here-></p>
+			<input type="text" id="code_desktop3_app1_link" placeholder="Default none">
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for second app (third desktop) here-></p>
+			<input type="text" id="code_desktop3_app2_link" placeholder="Default none">
+		</div>
+
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (third desktop) here-></p>
+			<input type="text" id="code_desktop3_app3_link" placeholder="Default none">
+		</div>
+
+		<div class="title">
+			<h2>Manage univ preset:</h2>
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for first app (first desktop) here-></p>
+			<input type="text" id="univ_desktop1_app1_link" placeholder="Default none">
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for second app (first desktop) here-></p>
+			<input type="text" id="univ_desktop1_app2_link" placeholder="Default none">
+		</div>
+
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (first desktop) here-></p>
+			<input type="text" id="univ_desktop1_app3_link" placeholder="Default none">
+		</div>
+
+		<div class="divider"></div>
+		
+		<div class="enter_info">
+			<p>Enter link or path for first app (second desktop) here-></p>
+			<input type="text" id="univ_desktop2_app1_link" placeholder="Default none">
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for second app (second desktop) here-></p>
+			<input type="text" id="univ_desktop2_app2_link" placeholder="Default none">
+		</div>
+
+		
+		<div class="enter_info">
+			<p>Enter link or path for third app (second desktop) here-></p>
+			<input type="text" id="univ_desktop2_app3_link" placeholder="Default none">
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="enter_info">
+			<p>Enter link or path for first app (third desktop) here-></p>
+			<input type="text" id="univ_desktop3_app1_link" placeholder="Default none">
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for second app (third desktop) here-></p>
+			<input type="text" id="univ_desktop3_app2_link" placeholder="Default none">
+		</div>
+
+		<div class="enter_info">
+			<p>Enter link or path for third app (third desktop) here-></p>
+			<input type="text" id="univ_desktop3_app3_link" placeholder="Default none">
+		</div>
+
+
+		<div class="title">
+			<h2>Manage music</h2>
+		</div>
+
+		<div class="enter_info">
+			<p>Enter links for rock music here-></p>
+			<textarea name="rock_music_links" id="rock_music_links" cols="10" rows="10" placeholder="Default none"></textarea>
+		</div>
+
+		<div class="enter_info">
+			<p>Enter links for lo-fi music here-></p>
+			<textarea name="lo-fi_music_links" id="lo-fi_music_links" cols="10" rows="10" placeholder="Default none"></textarea>
+		</div>
+
+		<div class="enter_info">
+			<p>Enter links for code music here-></p>
+			<textarea name="code_music_links" id="code_music_links" cols="10" rows="10" placeholder="Default none"></textarea>
+		</div>
+
+		<div class="enter_info">
+			<p>Enter links for bass music here-></p>
+			<textarea name="bass_music_links" id="bass_music_links" cols="10" rows="10" placeholder="Default none"></textarea>
+		</div>
+
+		<div class="approve_changes">
+			<button id="discard" onclick="get_default()"><h2>Discard</h2></button>
+			<button id="save" onclick="get_data()"><h2>Save</h2></button>
+		</div>
+
 	</section>
+
+	<script type="text/javascript" src="../js/settings.js"></script>
 </body>
 
 </html>
