@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../img/favicon.png"/>
 
 	<!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
 	<script type="text/javascript" src="/eel.js"></script>
-	<script type="text/javascript"></script>
 
 	<!-- Stylesheet -->
 	<link rel="stylesheet" href="../css/index.css">
@@ -31,24 +31,24 @@
 	</nav>
 
 	<section>
-		<div class="card" id="planning_preset">
+		<div class="card" id="planning_preset" onclick="preset_1()">
 			<h2>Plan pre.</h2>
 			<div class="photo">
-				<img src="" alt="">
+				<img src="../img/plan_preset.jpg">
 			</div>
 		</div>
 
-		<div class="card" id="planning_preset">
+		<div class="card" id="code_preset" onclick="preset_2()">
 			<h2>Code pre.</h2>
 			<div class="photo">
-				<img src="" alt="">
+				<img src="../img/code_preset.jpg">
 			</div>
 		</div>
 
-		<div class="card" id="planning_preset">
+		<div class="card" id="univ_preset" onclick="preset_3()">
 			<h2>Univ pre.</h2>
 			<div class="photo">
-				<img src="" alt="">
+				<img src="../img/univ_preset.jpg">
 			</div>
 		</div>
 
@@ -56,49 +56,29 @@
 			<h2>Quick access:</h2>
 		</div>
 
-		<div class="card" id="code_music">
-			<h2>Code music</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
-		</div>
-
-		<div class="card" id="rock_music">
+		<div class="card" id="rock_music" onclick="open_rock_music()">
 			<h2>Rock music</h2>
 			<div class="photo">
-				<img src="" alt="">
+				<img src="../img/rock.jpg">
+			</div>
+		</div>
+		
+		<div class="card" id="lofi_music"  onclick="open_lofi_music()">
+			<h2>Lo-fi music</h2>
+			<div class="photo">
+				<img src="../img/lofi.jpg">
 			</div>
 		</div>
 
-		<div class="card" id="cyberpunk_music">
-			<h2>Cyberpunk</h2>
+		<div class="card" id="code_music"  onclick="open_code_music()">
+			<h2>Code music</h2>
 			<div class="photo">
-				<img src="" alt="">
-			</div>
-		</div>
-
-
-		<div class="card" id="code_music">
-			<h2>VS Code</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
-		</div>
-
-		<div class="card" id="rock_music">
-			<h2>Any.do</h2>
-			<div class="photo">
-				<img src="" alt="">
-			</div>
-		</div>
-
-		<div class="card" id="cyberpunk_music">
-			<h2>Calendar</h2>
-			<div class="photo">
-				<img src="" alt="">
+				<img src="../img/code.jpg">
 			</div>
 		</div>
 	</section>
+
+	<script type="text/javascript" src="../js/index_page.js"></script>
 </body>
 
 </html>

@@ -74,7 +74,7 @@ nav h1 {
 }
 
 section {
-  padding: 30px 20px 50px;
+  padding: 30px 20px 0;
   display: -ms-grid;
   display: grid;
   grid-gap: 30px 20px;
@@ -123,6 +123,14 @@ section {
   height: 100px;
   background-color: #5378e0;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.card .photo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .title {
@@ -139,6 +147,10 @@ section {
           justify-content: center;
   padding: 10px 0;
   border-radius: 10px;
+}
+
+section {
+  padding-bottom: 30px;
 }
 
 #back {
