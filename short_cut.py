@@ -30,13 +30,16 @@ coding_music_links = [
 	]
 
 rock_music_links = [
-	"https://www.youtube.com/watch?v=8BVPSCOz364"
+	"https://www.youtube.com/watch?v=8BVPSCOz364",
+	"https://www.youtube.com/watch?v=XqFiG-B1ILg&t=242s&ab_channel=ContentChimp"
 	]
 
-notion_link = "https://www.notion.so/"
-anyDo_link = "https://desktop.any.do/agenda"
+
 calendar_link = "https://calendar.google.com/calendar/u/0/r"
 atutor_link = "https://dl.tntu.edu.ua/login.php"
+keep_link = "https://keep.google.com/u/0/#home"
+codewars_link = "https://www.codewars.com/dashboard"
+anyDo_link = "https://desktop.any.do/agenda"
 
 university_dir_path = r"D:\Education\University"
 anyDo_path = r"C:\Users\oleg\AppData\Local\Programs\@anydoelectron-app\Any.do.exe"
@@ -58,18 +61,25 @@ def open_music(code = 0):
 		webbrowser.open(rock_music_links[0 if len(rock_music_links) == 1 else randint(0, len(rock_music_links)-1)], new=0, autoraise=True)
 		sleep(delay)
 
-def open_notion():
-	webbrowser.open(notion_link, new=0, autoraise=True)
-	sleep(delay)
 
 def open_anyDo():
 	# call([anyDo_path]) #opens desktop app 
-	webbrowser.open(anyDo_link, new=0, autoraise=True)
+	webbrowser.open(anyDo_link, new=0, autoraise=True) # open Any.do in web browser (better for program)
 	sleep(delay)
 
 def open_wpsOffice():
 	call([wpsOffice_path])
-	sleep(delay*9)
+	sleep(delay*8)
+	# webbrowser.open("https://drive.wps.com/", new=0, autoraise=True)
+	# sleep(delay)
+
+def open_keep():
+	webbrowser.open(keep_link, new=0, autoraise=True)
+	sleep(delay)
+
+def open_codewars():
+	webbrowser.open(codewars_link, new=0, autoraise=True)
+	sleep(delay)
 
 def open_calendar():
 	webbrowser.open(calendar_link, new=0, autoraise=True)
@@ -100,35 +110,42 @@ def get_json_data():
 # Planning preset
 def planning_preset():
 	desktop_accessor.GoToDesktopNumber(0)
-	if desktop_count == 0:
-		open_music(0)
-		open_anyDo()
-		open_notion()
-	elif desktop_count == 1:
-		open_music(0)
-		desktop_accessor.GoToDesktopNumber(1)
-		open_anyDo()
-		open_notion()
-	else:
-		open_music(0)
-		desktop_accessor.GoToDesktopNumber(1)
-		open_anyDo()
-		desktop_accessor.GoToDesktopNumber(2)
-		open_notion()
+	open_music(0)
 
+	if desktop_count == 0:
+		open_keep()
+		open_calendar()
+	if desktop_count == 1:
+		desktop_accessor.GoToDesktopNumber(1)
+		open_keep()
+		open_calendar()
+	elif desktop_count >= 2:
+		desktop_accessor.GoToDesktopNumber(1)
+		open_keep()
+		open_calendar()
+		desktop_accessor.GoToDesktopNumber(2)
+
+	open_anyDo()
 	desktop_accessor.GoToDesktopNumber(0)
 
 
 # Coding preset
 def coding_preset():
 	desktop_accessor.GoToDesktopNumber(0)
+	open_music(1)
+
 	if desktop_count == 0:
-		open_music(1)
 		open_anyDo()
-	else:
-		open_music(1)
+		open_codewars()
+	elif desktop_count == 1:
 		desktop_accessor.GoToDesktopNumber(1)
 		open_anyDo()
+		open_codewars()
+	elif desktop_count >= 2:
+		desktop_accessor.GoToDesktopNumber(1)
+		open_anyDo()
+		desktop_accessor.GoToDesktopNumber(2)
+		open_codewars()
 
 	desktop_accessor.GoToDesktopNumber(0)
 
@@ -136,28 +153,35 @@ def coding_preset():
 # University preset
 def university_preset():
 	desktop_accessor.GoToDesktopNumber(0)
+	open_music(0)
+
 	if desktop_count == 0:
-		open_music(0)
 		open_anyDo()
+		open_calendar()
 		open_univ_dir()
 		open_wpsOffice()
 	elif desktop_count == 1:
-		open_music(0)
-		open_calendar()
-		open_notion()
 		open_anyDo()
+		open_calendar()
 		open_atutor()
 		desktop_accessor.GoToDesktopNumber(1)
 		open_univ_dir()
 		open_wpsOffice()
-	else:
-		open_music(0)
-		open_anyDo()
-		open_notion()
+	elif desktop_count == 2:
 		desktop_accessor.GoToDesktopNumber(1)
+		open_anyDo()
+		open_calendar()
 		open_atutor()
+		desktop_accessor.GoToDesktopNumber(2)
+		open_univ_dir()
+		open_wpsOffice()
+	elif desktop_count >= 3:
+		desktop_accessor.GoToDesktopNumber(1)
+		open_anyDo()
 		open_calendar()
 		desktop_accessor.GoToDesktopNumber(2)
+		open_atutor()
+		desktop_accessor.GoToDesktopNumber(3)
 		open_univ_dir()
 		open_wpsOffice()
 		
